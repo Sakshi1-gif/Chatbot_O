@@ -30,7 +30,7 @@ if prompt := st.chat_input("Oggy se baat karo..."):
 
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",  # Fast, high-quality model on Groq's free tier
+            model="openai/gpt-oss-120b",  # Fast, high-quality model on Groq's free tier
             messages=messages_payload,
             max_tokens=300,
         )
